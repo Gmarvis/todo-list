@@ -42,14 +42,14 @@ form {
 }
 
 li {
-    background-color: rgb(226, 220, 220);
+    background-color: #e2dcdc;
+    font-weight: 500;
     margin: 5px;
     height: 30px;
     display: flex;
     align-items: center;
     padding: 0 5px;
 }
-
 
 button {
     color: #0f6164;
