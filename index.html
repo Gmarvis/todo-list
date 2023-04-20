@@ -12,28 +12,31 @@
     <div class="main-container">
         <div class="heading">
     <h2>Smart task</h2>
+ 
     <form id="form">
         <input type="text" class="todo-input" placeholder="Enter your today task">
         <button class="todo-button" id="add">
             <i class="fa-solid fa-plus"></i>
         </button>
+    </form>
+    <div class="filter">
+        <select name="todos" id="filter-todos">
+            <option value="all">All</option>
+
+            <option value="complete">Completed</option>
+
+            <option value="incomplete">Incomplete</option>
+        </select>
+    </div>
     </div>
   
 
-        <div class="filter">
-            <select name="todos" id="filter-todos">
-                <option value="all">All</option>
 
-                <option value="complete">Complete</option>
 
-                <option value="incomplete">Incomplete</option>
-            </select>
-        </div>
-    </form>
 
     <div id="todo-container">
         <ul class="todo-list">
-            <!-- <li></li> -->
+            <!-- <li>    <i class="fa-solid fa-check">  <i class="fa-solid fa-trash"></i></i> </li>  -->
         </ul>
     </div>
 

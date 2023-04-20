@@ -6,15 +6,21 @@
     list-style: none;
 }
 
+body {
+    background-color: #c8d5f8;
+    font-family: poppins;
+}
+
 h2 {
     font-family: poppins;
     text-align: center;
     text-transform: capitalize;
+    color: #fff;
 }
 
 
 .main-container {
-    background-color: aqua;
+    background-color: #fff;
     width: 30vw;
     margin: auto auto;
     height: 98vh;
@@ -23,16 +29,17 @@ h2 {
     flex-direction: column;
     align-content: center;
     position: relative;
+    overflow: scroll;
 }
 
 .heading {
-    background-color: #14969b;
+    background-color: #5581f4;
     margin: 5px;
     border-radius: 5px;
 }
 
 form {
-    background-color: aqua;
+    background-color: #fff;
     margin: 5px;
     display: flex;
     border-radius: 20px 20px 0 0;
@@ -40,30 +47,62 @@ form {
 }
 
 li {
-    background-color: #e2dcdc;
+    display: flex;
+    justify-content: space-between;
     font-weight: 500;
+    border: 1px solid #5581f4;
     margin: 5px;
-    height: 30px;
+    height: 40px;
     display: flex;
     align-items: center;
     padding: 0 5px;
+    overflow: hidden;
+    transition: 3s ease-out;
+
+}
+
+li button {
+    background-color: transparent;
+}
+
+form button {
+    border: 2px solid #fff;
+    background-color: #5581f4;
+    color: #fff;
+    /* border-radius: 50%; */
+    width: 50p;
+
+    
+
 }
 
 button {
     color: #0f6164;
     border: none; 
-    background-color: ;
-    
+    cursor: pointer;    
 }
 
 button i {
-    width: 25px;
+    width: 30px;
     font-weight: bolder;
 }
+
+.fa-trash {
+    color: #5581f4;
+
+    height: auto;
+}
+
+.fa-check {
+    color: #5581f4;
+    
+}
+
 
 input {
     margin: 5px;
     width: 80vw;
+    height: 30px;
     border: none;
     padding: 3px;
     background-color: transparent;
@@ -71,7 +110,16 @@ input {
 }
 
 .filter {
-    display: none;
+    float: right;
+    position: relative;
+    margin: 0 5px 5px;
+}
+
+select {
+    outline: none;
+    border: none;
+    color: #364977;
+
 }
 
 @media screen and (max-width:770px) {
