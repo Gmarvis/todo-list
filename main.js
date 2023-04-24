@@ -41,16 +41,27 @@ if (!todoInput.value){
         todoContainer[0]=newTodo.style.textDecoration="line-through"
     })
 
+    completeBtn.addEventListener('dblclick' , function(){
+        todoContainer[0]=newTodo.style.textDecoration="none"
+    })
+
         // delete todo funtion
         deletebtn.addEventListener('click', function(){
             newTodo.remove()
         })
-
-
-
+        saveData()
 })
 
+// save local data
+function saveData () {
+    let addTodo = document.querySelector('li')
+    localStorage.setItem('data' , addTodo.innerHTML)
+}
 
+function showTask() {
+    document.querySelector('li').innerHTML = localStorage.getItem('data')
+}
+showTask()
 
 
 

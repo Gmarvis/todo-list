@@ -57,8 +57,11 @@ li {
     align-items: center;
     padding: 0 5px;
     overflow: hidden;
-    transition: 3s ease-out;
+    transition: .3s ease-in-out;
+}
 
+li:hover {
+    padding: 5px;
 }
 
 li button {
@@ -98,7 +101,6 @@ button i {
     
 }
 
-
 input {
     margin: 5px;
     width: 80vw;
@@ -110,6 +112,7 @@ input {
 }
 
 .filter {
+    display: none;
     float: right;
     position: relative;
     margin: 0 5px 5px;
